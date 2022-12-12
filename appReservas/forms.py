@@ -33,5 +33,5 @@ class NuevaReserva(forms.ModelForm):
                 raise forms.ValidationError("comensales debe estar entre 1 y 15")
             return inputComensales
         estado = forms.CharField(widget=forms.Select(choices=ESTADOS))
-        observacion = forms.CharField(required=False)
+        
         
